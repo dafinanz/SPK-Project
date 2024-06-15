@@ -82,6 +82,6 @@
 </div>
 <div class="col-lg-12">
     <br>
-    <p class="back-link" style="text-align:center">Desa Gedongboyountung 2023</p>
+    <p class="back-link" style="text-align:center">SPK Kelompok 2</p>
 </div>
 @endsection

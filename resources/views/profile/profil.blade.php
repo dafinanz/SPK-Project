@@ -97,7 +97,7 @@
 </div>
 <div class="col-lg-12">
     <br>
-    <p class="back-link">Desa Gedongboyountung 2023</p>
+    <p class="back-link">SPK Kelompok 2</p>
 </div>
 <script src="{{asset ('js/custom.js')}}"></script>
 <script src="{{asset ('js/my-login.js')}}"></script>

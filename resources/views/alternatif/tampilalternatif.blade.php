@@ -121,7 +121,7 @@
 
             </div>
             <div class="col-sm-12">
-                <p class="back-link">Desa Gedongboyountung 2023</a></p>
+                <p class="back-link">SPK Kelompok 2</a></p>
             </div>
         </div>
     </div>

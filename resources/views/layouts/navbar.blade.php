@@ -5,7 +5,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="#"><span>SPK BLT-DD </span>GEDONGBOYOUNTUNG</a>
+            <a class="navbar-brand" href="#">SPK Kelompok 2</a>
         </div>
     </div><!-- /.container-fluid -->
 </nav>
