@@ -19,8 +19,8 @@ class AlternatifController extends Controller
     {
         $cari = $request->cari;
         $alternatifs = alternatif::where('nama', 'LIKE', "%" . $cari . "%")
-            ->orWhere('nik', 'LIKE', "%" . $cari . "%")
-            ->orWhere('nkk', 'LIKE', "%" . $cari . "%")
+            // ->orWhere('nik', 'LIKE', "%" . $cari . "%")
+            // ->orWhere('nkk', 'LIKE', "%" . $cari . "%")
             ->orderBy('id', 'asc')->paginate(20);
         return view('alternatif.tampilalternatif', compact('alternatifs'));
     }
@@ -50,20 +50,20 @@ class AlternatifController extends Controller
     {
         $this->validate($request, [
             'kode' => 'required',
-            'nkk' => 'required|unique:cadangan_alternatif,nkk,number',
-            'nik' => 'required|unique:cadangan_alternatif,nik,number',
+            // 'nkk' => 'required|unique:cadangan_alternatif,nkk,number',
+            // 'nik' => 'required|unique:cadangan_alternatif,nik,number',
             'nama' => 'required',
-            'alamat' => 'required',
-            'nomor' => 'required|unique:cadangan_alternatif,nomor,number',
+            // 'alamat' => 'required',
+            // 'nomor' => 'required|unique:cadangan_alternatif,nomor,number',
         ]);
 
         $alternatifs = alternatif::create([
             'kode' => $request->kode,
-            'nkk' => $request->nkk,
-            'nik' => $request->nik,
+            // 'nkk' => $request->nkk,
+            // 'nik' => $request->nik,
             'nama' => $request->nama,
-            'alamat' => $request->alamat,
-            'nomor' => $request->nomor
+            // 'alamat' => $request->alamat,
+            // 'nomor' => $request->nomor
         ]);
         if ($alternatifs) {
             Alert::success('Alternatif Berhasil Ditambahkan', 'Selamat');
@@ -107,21 +107,21 @@ class AlternatifController extends Controller
     {
         $this->validate($request, [
             'kode' => 'required',
-            'nkk' => 'required',
-            'nik' => 'required',
+            // 'nkk' => 'required',
+            // 'nik' => 'required',
             'nama' => 'required',
-            'alamat' => 'required',
-            'nomor' => 'required|unique:cadangan_alternatif,nomor,number',
+            // 'alamat' => 'required',
+            // 'nomor' => 'required|unique:cadangan_alternatif,nomor,number',
         ]);
 
         $alternatifs = Alternatif::find($id);
         $alternatifs->update([
             'kode' => $request->kode,
-            'nkk' => $request->nkk,
-            'nik' => $request->nik,
+            // 'nkk' => $request->nkk,
+            // 'nik' => $request->nik,
             'nama' => $request->nama,
-            'alamat' => $request->alamat,
-            'nomor' => $request->nomor
+            // 'alamat' => $request->alamat,
+            // 'nomor' => $request->nomor
         ]);
 
         if ($alternatifs) {

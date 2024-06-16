@@ -33,7 +33,7 @@
                                 <a type="button" class="btn btn-danger" href="{{route('alternatif.create')}}"><i class="fa fa-plus"></i> Tambah</a>
                             </div>
                             <div class="form-group">
-                                <input id="floatingInputGroup1" name="cari" type="text" class="form-control" placeholder="Cari Nama, NIK, NKK">
+                                <input id="floatingInputGroup1" name="cari" type="text" class="form-control" placeholder="Cari">
                                 <button class="input-group-text btn btn-primary">Cari</button>
                             </div>
                             {{-- <ul class="pull-right panel-settings panel-button-tab-right">
@@ -67,12 +67,13 @@
                             <thead class="text-center" style="vertical-align:middle;">
                                 <tr>
                                     <th rowspan="2">No</th>
-                                    <th rowspan="2">Tahun</th>
-                                    <th rowspan="2">NKK</th>
-                                    <th rowspan="2">NIK</th>
-                                    <th rowspan="2">Nama Penduduk</th>
-                                    <th rowspan="2">Alamat</th>
-                                    <th rowspan="2">Nomor Hp</th>
+                                    {{-- <th rowspan="2">Tahun</th> --}}
+                                    {{-- <th rowspan="2">NKK</th> --}}
+                                    {{-- <th rowspan="2">NIK</th> --}}
+                                    <th rowspan="2">Kode Alternatif</th>
+                                    <th rowspan="2">Nama Alternatif</th>
+                                    {{-- <th rowspan="2">Alamat</th> --}}
+                                    {{-- <th rowspan="2">Nomor Hp</th> --}}
                                     <th colspan="2">Action</th>
                                 </tr>
                                 <tr>
@@ -85,12 +86,13 @@
                                 <tr>
                                     <input type="hidden" class="delete_id" value="{{ $a->id }}">
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{$a->created_at->year }}</td>
-                                    <td>{{$a->nkk}}</td>
-                                    <td>{{ $a->nik }}</td>
+                                    {{-- <td>{{$a->created_at->year }}</td> --}}
+                                    {{-- <td>{{$a->nkk}}</td> --}}
+                                    {{-- <td>{{ $a->nik }}</td> --}}
+                                    <td>{{ $a->kode }}</td>
                                     <td>{{ $a->nama }}</td>
-                                    <td>{{ $a->alamat }}</td>
-                                    <td>{{ $a->nomor }}</td>
+                                    {{-- <td>{{ $a->alamat }}</td> --}}
+                                    {{-- <td>{{ $a->nomor }}</td> --}}
                                     <td>
                                         <a href="{{ route('alternatif.edit', $a->id) }}" class="btn btn-warning">
                                             <i class="fa fa-edit"></i> Edit

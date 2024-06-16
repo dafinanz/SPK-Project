@@ -39,22 +39,22 @@
             <h5 class="card-header">Alternatif</h5>
             <div class="form-row text-center">
                 <div class="col-md-3 mb-3 input-group-sm">
-                    <label>Kode</label>
+                    <label>Kode Alternatif</label>
                     <input type="text" name="kode" class="form-control" placeholder="" value="{{ old('kode', $alternatifs->kode) }}">
                 </div>
-                <div class="col-md-3 mb-3 input-group-sm">
+                {{-- <div class="col-md-3 mb-3 input-group-sm">
                     <label>NKK</label>
                     <input type="text" name="nkk" class="form-control" placeholder="" value="{{ old('nkk', $alternatifs->nkk) }}">
                 </div>
                 <div class="col-md-3 mb-3 input-group-sm">
                     <label>NIK</label>
                     <input type="text" name="nik" class="form-control" placeholder="" value="{{ old('nik', $alternatifs->nik) }}">
-                </div>
+                </div> --}}
                 <div class="col-md-3 mb-3 input-group-sm">
-                    <label>Nama Penduduk</label>
+                    <label>Nama Alternatif</label>
                     <input type="text" name="nama" class="form-control" placeholder="" value="{{ old('nama', $alternatifs->nama) }}">
                 </div>
-                <div class="col-md-3 mb-3 input-group-sm">
+                {{-- <div class="col-md-3 mb-3 input-group-sm">
                     <br>
                     <label>Alamat</label>
                     <input type="text" name="alamat" class="form-control" placeholder="" value="{{ old('alamat', $alternatifs->alamat) }}">
@@ -63,7 +63,7 @@
                     <br>
                     <label>Nomor Hp</label>
                     <input type="text" name="nomor" class="form-control" placeholder="" value="{{ old('nomor', $alternatifs->nomor) }}">
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="form-row">

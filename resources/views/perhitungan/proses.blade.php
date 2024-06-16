@@ -426,11 +426,11 @@
                             </tbody>
                         </table>
                         <br>
-                        <form class="">
+                        {{-- <form class="">
                             <div class="form-group">
                                 <a type="button" class="btn btn-primary" href=""><i class="fa fa-print"></i> Cetak</a>
                             </div>
-                        </form>
+                        </form> --}}
                     </div>
                 </div>
             </div>
