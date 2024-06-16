@@ -36,7 +36,7 @@
                                 <input id="floatingInputGroup1" name="cari" type="text" class="form-control" placeholder="Cari Nama, NIK, NKK">
                                 <button class="input-group-text btn btn-primary">Cari</button>
                             </div>
-                            <ul class="pull-right panel-settings panel-button-tab-right">
+                            {{-- <ul class="pull-right panel-settings panel-button-tab-right">
                                 <li class="dropdown">
                                     <a class="pull-right dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                         <em class="fa fa-cogs"></em>
@@ -59,7 +59,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> --}}
                         </form>
                     </div>
                     <div class="table-responsive">
