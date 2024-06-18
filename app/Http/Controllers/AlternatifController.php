@@ -133,6 +133,15 @@ class AlternatifController extends Controller
         }
     }
 
+    public function updateSelection($id)
+    {
+        $alternatif = Alternatif::findOrFail($id);
+        $alternatif->is_selected = !$alternatif->is_selected;
+        $alternatif->save();
+
+        return redirect()->route('alternatif.index')->with('success', 'Alternatif updated successfully.');
+    }
+
     /**
      * Remove the specified resource from storage.
      *

@@ -11,5 +11,5 @@ class riwayat_alternatif extends Model
     protected $guarded = [];
     protected $primaryKey = 'id';
     protected $table = 'cadangan_alternatif';
-    protected $fillable = ['id', 'kode', 'nkk', 'nik', 'nama', 'alamat', 'nomor'];
+    protected $fillable = ['id', 'kode', 'nama'];
 }

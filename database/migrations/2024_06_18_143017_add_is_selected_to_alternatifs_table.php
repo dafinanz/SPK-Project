@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('perbandingan_alternatifs', function (Blueprint $table) {
-            $table->renameColumn('kode_kriteria', 'kriteria_id');
+        Schema::table('alternatifs', function (Blueprint $table) {
+            $table->boolean('is_selected')->default(false);
         });
     }
 
@@ -25,8 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('perbandingan_alternatifs', function (Blueprint $table) {
-            $table->renameColumn('kriteria_id', 'kode_kriteria');
+        Schema::table('alternatifs', function (Blueprint $table) {
+            $table->dropColumn('is_selected');
         });
     }
 };

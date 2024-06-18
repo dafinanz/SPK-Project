@@ -10,8 +10,8 @@ class alternatif extends Model
     use HasFactory;
     protected $guarded = [];
     protected $primaryKey = 'id';
-    protected $table = 'cadangan_alternatif';
-    protected $fillable = ['id', 'kode', 'nkk', 'nik', 'nama', 'alamat', 'nomor'];
+    protected $table = 'alternatifs';
+    protected $fillable = ['id', 'kode', 'nama'];
 
     //relasi dengan tabel pemeringkatan (one to one)
     public function pemeringkatan()
